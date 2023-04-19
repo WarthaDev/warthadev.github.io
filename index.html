@@ -81,6 +81,8 @@
   </nav>
 
   <!-- Video background -->
+  <div class="spinner-container text-primary " role="status">
+    <span class="visually-hidden">Loading...</span>
   <div class="scroll-static">
     <div class="row justify-content-center align-content-center text-center text-white">
 
@@ -119,6 +121,7 @@
 
           </div>
         </div>
+      </div>
       </div>
 
       <div class="col-12">
@@ -579,6 +582,11 @@
         nav.classList.remove('navbar-dark', 'opacity-background');
       }
 
+    });
+  </script>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('.spinner-container').fadeOut('slow');
     });
   </script>
 </body>
