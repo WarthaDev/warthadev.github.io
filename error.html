@@ -25,145 +25,175 @@
 </head>
 
 <body>
-  <!-- Navbar  -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 p-lg-1 rgb(255,255,255)">
-    <div class="container-fluid mx-2 my-2">
-      <span class="navbar-brand">Wartha Developer
-        <img src="img/lencana.png" class="img-lencana rounded-circle mb-1 mx-1 me-3" />
-      </span>
+  <!-- konten yang ingin disembunyikan saat pemuat halaman berjalan -->
+  <div id="my-content" class="d-none">
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 p-lg-1 rgb(255,255,255)">
+      <div class="container-fluid mx-2 my-2">
+        <span class="navbar-brand">Wartha Developer
+          <img src="img/lencana.png" class="img-lencana rounded-circle mb-1 mx-1 me-3" />
+        </span>
 
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
 
-        <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
 
-      </button>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-mx-5 py-3 mx-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://linktr.ee/hewartsu">Donation</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="https://colab.research.google.com/github/WarthaDev/Stable-Diffusion/blob/master/Wartha-Sensei-Stable-Diffusion.ipynb">
-              Stable Diffusion</a>
-          </li>          
-          <li class="nav-item">
-            <a class="nav-link active" href="./error.html">Document</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-mx-5 py-3 mx-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://linktr.ee/hewartsu">Donation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://colab.research.google.com/github/WarthaDev/Stable-Diffusion/blob/master/Wartha-Sensei-Stable-Diffusion.ipynb">
+                Stable Diffusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./error.html">Document</a>
+            </li>
+          </ul>
 
-        <div class="py-2">
-          <a class="navbar-brand" href="https://youtube.com/c/warthasensei">
-            <i class="bi bi-youtube "></i>
-          </a>
-          <a class="navbar-brand" href="https://twitter.com/banu485">
-            <i class="bi bi-twitter "></i>
-          </a>
-          <a class="navbar-brand" href="https://instagram.com/hewartsu">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a class="navbar-brand" href="https://open.spotify.com/artist/7imN5UpqCoekwIGXiOgLh4?si">
-            <i class="bi bi-spotify"></i>
-          </a>
-          <a class="navbar-brand" href="https://github.com/warthadev">
-            <i class="bi bi-github"></i>
-          </a>
+          <div class="py-2">
+            <a class="navbar-brand" href="https://youtube.com/c/warthasensei">
+              <i class="bi bi-youtube "></i>
+            </a>
+            <a class="navbar-brand" href="https://twitter.com/banu485">
+              <i class="bi bi-twitter "></i>
+            </a>
+            <a class="navbar-brand" href="https://instagram.com/hewartsu">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="navbar-brand" href="https://open.spotify.com/artist/7imN5UpqCoekwIGXiOgLh4?si">
+              <i class="bi bi-spotify"></i>
+            </a>
+            <a class="navbar-brand" href="https://github.com/warthadev">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Video Background -->
+    <div class="scroll-static">
+      <div class="d-block d-xl-none ">
+        <video autoplay muted loop id="myVideo-portraint">
+          <source src="./video/anime.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="d-none d-xl-block">
+        <video autoplay muted loop id="myVideo-landscape">
+          <source src="./video/anime.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="text-content-error-pages text-white">
+        <h1 class="py-1">ERROR 404.</h1>
+        <h3>
+          Sorry this pages has become a private
+        </h3>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container text-center">
+      <div class="navbar-light w-100 pt-4">
+        <p>Follow Me</p>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="navbar-light w-100 pb-4">
+
+        <a class="navbar-brand" href="https://youtube.com/c/warthasensei">
+          <i class="bi bi-youtube"></i></a>
+
+        <a class="navbar-brand" href="http://apple.co/3DeI1Oq">
+          <img src="svg/itunes.svg" width="30" height="30"></i></a>
+
+        <a class="navbar-brand" href="https://open.spotify.com/artist/7imN5UpqCoekwIGXiOgLh4?si">
+          <i class="bi bi-spotify"></i></a>
+
+        <a class="navbar-brand" href="https://soundcloud.com/hewartsu">
+          <img src="svg/soundcloud.svg" width="28" height="28"></i></a>
+
+        <a class="navbar-brand" href="https://discord.gg/sRMcaJtJdY">
+          <img src="svg/discord.svg" width="25" height="25"></i></a>
+
+        <a class="navbar-brand" href="https://twitter.com/banu485">
+          <i class="bi bi-twitter"></i></a>
+
+        <a class="navbar-brand" href="https://instagram.com/hewartsu">
+          <i class="bi bi-instagram"></i></a>
+
+        <a class="navbar-brand" href="https://facebook.com/hewartsu28">
+          <i class="bi bi-facebook"></i></a>
+
+        <a class="navbar-brand" href="http://amzn.to/3tIGbCA">
+          <img src="svg/amazon.svg" width="25" height="25"></i></a>
+
+        <a class="navbar-brand" href="https://github.com/warthadev">
+          <i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div id="my-spinner" class=" d-flex align-items-center justify-content-center vh-100">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex">
+          <p class="align-self-start ">Tunggu Ya Temen-Temen</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border text-danger" role="status">
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Video Background -->
-  <div class="scroll-static">
-    <div class="d-block d-xl-none ">
-      <video autoplay muted loop id="myVideo-portraint">
-        <source src="./video/anime.mp4" type="video/mp4">
-      </video>
-    </div>
+    <!-- JS Bootstrap -->
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
 
-    <div class="d-none d-xl-block">
-      <video autoplay muted loop id="myVideo-landscape">
-        <source src="./video/anime.mp4" type="video/mp4">
-      </video>
-    </div>
+      window.addEventListener('scroll', function () {
+        // deafault hitam putih navbar
+        if (window.pageYOffset > 15) {
+          nav.classList.add('navbar-light', 'bg-light', 'shadow',);
+        } else {
+          nav.classList.remove('navbar-dark', 'bg-light', 'shadow',);
+        }
+        if (window.pageYOffset < 10) {
+          nav.classList.add('navbar-dark',);
+        } else {
+          nav.classList.remove('navbar-dark',);
+        }
 
-    <div class="text-content-error-pages text-white">
-      <h1 class="py-1">ERROR 404.</h1>
-      <h3>
-        Sorry this pages has become a private
-      </h3>
-    </div>
-  </div>
-
-  <!-- Main Content Area -->
-  <div class="container text-center">
-    <div class="navbar-light w-100 pt-4">
-      <p>Follow Me</p>
-    </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="navbar-light w-100 pb-4">
-
-      <a class="navbar-brand" href="https://youtube.com/c/warthasensei">
-        <i class="bi bi-youtube"></i></a>
-
-      <a class="navbar-brand" href="http://apple.co/3DeI1Oq">
-        <img src="svg/itunes.svg" width="30" height="30"></i></a>
-
-      <a class="navbar-brand" href="https://open.spotify.com/artist/7imN5UpqCoekwIGXiOgLh4?si">
-        <i class="bi bi-spotify"></i></a>
-
-      <a class="navbar-brand" href="https://soundcloud.com/hewartsu">
-        <img src="svg/soundcloud.svg" width="28" height="28"></i></a>
-
-      <a class="navbar-brand" href="https://discord.gg/sRMcaJtJdY">
-        <img src="svg/discord.svg" width="25" height="25"></i></a>
-
-      <a class="navbar-brand" href="https://twitter.com/banu485">
-        <i class="bi bi-twitter"></i></a>
-
-      <a class="navbar-brand" href="https://instagram.com/hewartsu">
-        <i class="bi bi-instagram"></i></a>
-
-      <a class="navbar-brand" href="https://facebook.com/hewartsu28">
-        <i class="bi bi-facebook"></i></a>
-
-      <a class="navbar-brand" href="http://amzn.to/3tIGbCA">
-        <img src="svg/amazon.svg" width="25" height="25"></i></a>
-
-      <a class="navbar-brand" href="https://github.com/warthadev">
-        <i class="bi bi-github"></i></a>
-    </div>
-  </div>
-
-  <!-- JS Bootstrap -->
-  <script type="text/javascript" src='js/bootstrap.min.js'></script>
-  <script type="text/javascript">
-    var nav = document.querySelector('nav');
-
-    window.addEventListener('scroll', function () {
-      // deafault hitam putih navbar
-      if (window.pageYOffset > 15) {
-        nav.classList.add('navbar-light', 'bg-light', 'shadow',);
-      } else {
-        nav.classList.remove('navbar-dark', 'bg-light', 'shadow',);
-      }
-      if (window.pageYOffset < 10) {
-        nav.classList.add('navbar-dark',);
-      } else {
-        nav.classList.remove('navbar-dark',);
-      }
-
-    });
-  </script>
+      });
+    </script>
+    <script>
+      window.addEventListener('load', function () {
+        // mengambil elemen spinner
+        const spinner = document.getElementById('my-spinner');
+        // mengambil elemen konten
+        const content = document.getElementById('my-content');
+        // menghapus kelas "d-none" dari konten sehingga konten bisa ditampilkan
+        content.classList.remove('d-none');
+        // menambahkan kelas "d-none" ke spinner sehingga spinner bisa disembunyikan
+        spinner.classList.add('d-none');
+      });
+    </script>
 </body>
 
 </html>
