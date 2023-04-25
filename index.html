@@ -28,6 +28,7 @@
 <body>
   <!-- konten yang ingin disembunyikan saat pemuat halaman berjalan -->
   <div id="my-content" class="d-none">
+
     <!-- Navbar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark opacity-background p-md-3 p-lg-1 rgb(255,255,255)">
       <div class="container-fluid mx-2 my-2">
@@ -117,7 +118,7 @@
                 <div class="col-12">
                   <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mx-5">
                     <a class="btn btn-outline-light btn-md w-100" href="#features">Visit Me Now</a>
-                    <a class="btn btn-outline-light btn-md w-100" href="./error.html">Download Mods Minecraft</a>
+                    <a class="btn btn-outline-light btn-md w-100" href="./showcase-1.html">Download Mods Minecraft</a>
                   </div>
                 </div>
               </div>
@@ -570,15 +571,33 @@
 
   </div>
 
+  <!-- Pop-up Cookie -->
+  <div class="fixed-bottom bg-dark text-white m-3 rounded-3">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Pop-up Cookie JS -->
+        <div class="cookie-consent">
+          <div class="py-3 px-2">
+            <p>Kami menggunakan cookie untuk meningkatkan pengalaman pengguna. Klik "Setuju" untuk melanjutkan.
+            </p>
+            <div class="text-end">
+              <button class="btn btn-primary" id="cookie-consent-btn">Setuju</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Spinner -->
   <div id="my-spinner" class=" d-flex align-items-center justify-content-center vh-100">
     <div class="row">
       <div class="col-12">
         <div class="d-flex">
-          <p class="align-self-start ">Tunggu Ya Temen-Temen</p>
+          <p class="align-self-start m-2 py-2">Tunggu Ya Temen-Temen</p>
         </div>
         <div class="d-flex justify-content-center">
-          <div class="spinner-border text-danger" role="status">
+          <div class="spinner-border text-primary" role="status">
           </div>
         </div>
       </div>
@@ -586,37 +605,11 @@
 
     <!-- JavaScript Custom -->
     <script src="script.js"></script>
-    <!-- JS Bootstrap -->
+    <script type="text/javascript"></script>
     <script type="text/javascript" src='js/bootstrap.min.js'></script>
-    <script type="text/javascript">
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-        // deafault hitam putih navbar
-        if (window.pageYOffset > 55) {
-          nav.classList.add('navbar-light', 'bg-light', 'shadow',);
-        } else {
-          nav.classList.remove('navbar-dark', 'bg-light', 'shadow',);
-        }
-        if (window.pageYOffset < 50) {
-          nav.classList.add('navbar-dark', 'opacity-background');
-        } else {
-          nav.classList.remove('navbar-dark', 'opacity-background');
-        }
-      });
-    </script>
-    <script>
-      window.addEventListener('load', function () {
-        // mengambil elemen spinner
-        const spinner = document.getElementById('my-spinner');
-        // mengambil elemen konten
-        const content = document.getElementById('my-content');
-        // menghapus kelas "d-none" dari konten sehingga konten bisa ditampilkan
-        content.classList.remove('d-none');
-        // menambahkan kelas "d-none" ke spinner sehingga spinner bisa disembunyikan
-        spinner.classList.add('d-none');
-      });
-    </script>
+    <script src="./costume-js/cookie.js"></script>
+    <script src="./costume-js/spinner-loading.js"></script>
+    <script src="./costume-js/navbar-index.js"></script>
 </body>
 
 </html>

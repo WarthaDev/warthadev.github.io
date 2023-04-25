@@ -153,47 +153,22 @@
     <div class="row">
       <div class="col-12">
         <div class="d-flex">
-          <p class="align-self-start ">Tunggu Ya Temen-Temen</p>
+          <p class="align-self-start m-2 py-2">Tunggu Ya Temen-Temen</p>
         </div>
         <div class="d-flex justify-content-center">
-          <div class="spinner-border text-danger" role="status">
+          <div class="spinner-border text-primary" role="status">
           </div>
         </div>
       </div>
     </div>
 
-    <!-- JS Bootstrap -->
-    <script type="text/javascript" src='js/bootstrap.min.js'></script>
-    <script type="text/javascript">
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-        // deafault hitam putih navbar
-        if (window.pageYOffset > 15) {
-          nav.classList.add('navbar-light', 'bg-light', 'shadow',);
-        } else {
-          nav.classList.remove('navbar-dark', 'bg-light', 'shadow',);
-        }
-        if (window.pageYOffset < 10) {
-          nav.classList.add('navbar-dark',);
-        } else {
-          nav.classList.remove('navbar-dark',);
-        }
-
-      });
-    </script>
-    <script>
-      window.addEventListener('load', function () {
-        // mengambil elemen spinner
-        const spinner = document.getElementById('my-spinner');
-        // mengambil elemen konten
-        const content = document.getElementById('my-content');
-        // menghapus kelas "d-none" dari konten sehingga konten bisa ditampilkan
-        content.classList.remove('d-none');
-        // menambahkan kelas "d-none" ke spinner sehingga spinner bisa disembunyikan
-        spinner.classList.add('d-none');
-      });
-    </script>
+        <!-- JavaScript Custom -->
+        <script src="script.js"></script>
+        <script type="text/javascript"></script>
+        <script type="text/javascript" src='js/bootstrap.min.js'></script>
+        <script src="./costume-js/spinner-loading.js"></script>
+        <script src="./costume-js/navbar-error.js"></script>
+        <script src="./costume-js/cookie.js"></script>
 </body>
 
 </html>
