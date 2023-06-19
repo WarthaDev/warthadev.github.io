@@ -50,9 +50,20 @@ body {
     left: 40px;
 }
 
-/* belum dipake */
 .opacity-background {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+}
+
+:root {
+  --theme-color: #ffcc00;
+}
+
+.bg-costume{
+  background-color: var(--theme-color) !important;
+}
+
+.bg-default{
+  background-color: #FFDAB9;
 }
 
 /* border radius in video showcase */
@@ -175,4 +186,19 @@ body {
 /* spinnner */
 #my-content {
     display: block;
+}
+
+.pagination .page-link {
+    color: white;
+    background-color: #212529;
+}
+
+.pagination .page-item.disabled .page-link{
+    color: #212529;
+    background-color: rgb(204, 204, 204);
+}
+
+.pagination .page-item.active .page-link{
+    color: black;
+    background-color: #ffcc00;
 }

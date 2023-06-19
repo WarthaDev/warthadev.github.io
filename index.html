@@ -9,16 +9,16 @@
 
   <meta name="description" content="Situs resmi Wartha Sensei atau Hewartsu. Berisikan konten-konten menarik.">
   <meta name="image" content="https://raw.githubusercontent.com/WarthaDev/warthadev.github.io/main-web/img/icon.png">
-  <meta itemprop="name" content="Nama situs Anda">
+  <meta itemprop="name" content="Wartha Sensei">
   <meta itemprop="description" content="Situs resmi Wartha Sensei atau Hewartsu. Berisikan konten-konten menarik.">
   <meta itemprop="image"
     content="https://raw.githubusercontent.com/WarthaDev/warthadev.github.io/main-web/img/icon.png">
 
   <!-- Header Color Chrome, Firefox OS $ Opera -->
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#000000">
 
   <!-- Header Color Chrome, Windows phone -->
-  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#000000">
 
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -29,10 +29,12 @@
 
   <!-- add icon link -->
   <link rel="icon" href="./img/icon.png" type="image/x-icon">
+  
 
 </head>
 
 <body>
+
   <!-- konten yang ingin disembunyikan saat pemuat halaman berjalan -->
   <div id="my-content" class="d-none">
 
@@ -63,8 +65,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link"
-                href="https://colab.research.google.com/github/WarthaDev/Stable-Diffusion/blob/master/Wartha-Sensei-Stable-Diffusion.ipynb">
-                Stable Diffusion</a>
+                href="./error.html">
+                Document</a>
             </li>
           </ul>
 
@@ -122,7 +124,7 @@
                 <div class="col-12">
                   <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mx-5">
                     <a class="btn btn-outline-light btn-md w-100" href="#features">Visit Me Now</a>
-                    <a class="btn btn-outline-light btn-md w-100" href="./showcase-3.html">Download Mods Minecraft</a>
+                    <a class="btn btn-outline-light btn-md w-100" href="./html/showcase/showcase-3.html">Download Mods Minecraft</a>
                   </div>
                 </div>
               </div>
@@ -580,14 +582,33 @@
     <div class="row">
       <div class="col-12">
         <div class="d-flex">
-          <p class="align-self-start m-2 py-2">Tunggu Ya Temen-Temen</p>
+          <p class="align-self-start m-2 py-2">Menuju Halaman Utama. Memuat Jaringan.</p>
         </div>
         <div class="d-flex justify-content-center">
-          <div class="spinner-border text-primary" role="status">
+          <div class="spinner-border text-warning" role="status">
           </div>
         </div>
       </div>
     </div>
+
+        <!-- Pop-up Cookie -->
+        <div class="fixed-bottom bg-dark text-white m-3 rounded-3">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Pop-up Cookie JS -->
+              <div class="cookie-consent">
+                <div class="py-3 px-2">
+                  <p>Jika halaman tidak dapat dimuat atau blank dengan layar putih, 
+                    reload kembali halaman. Pastikan internet stabil.
+                  </p>
+                  <div class="text-end">
+                    <button class="btn btn-primary" id="cookie-consent-btn">Mengerti</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <!-- JavaScript Custom -->
     <script src="script.js"></script>
@@ -598,6 +619,7 @@
     <script src="./costume-js/navbar-index.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2557565233613342"
       crossorigin="anonymous"></script>
+
 </body>
 
 </html>
