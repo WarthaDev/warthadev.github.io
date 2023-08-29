@@ -5,7 +5,7 @@ function setupNavbar() {
   const iconLinks = document.querySelectorAll(".navbar-nav .nav-link.active");
   const contentUtama = document.querySelector('.content-utama-index');
   const navbar = document.querySelector(".navbar-index");
-  const blockBrand = document.querySelector('.img-lencana', 'navbar-brand');
+  const blockBrand = document.querySelector('.img-lencana.navbar-brand');
 
   function updateNavbar() {
     if (window.scrollY > 0) {
